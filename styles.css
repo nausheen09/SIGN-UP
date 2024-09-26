@@ -1,0 +1,102 @@
+/* ==========SIGIN-UP========== */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.body-section {
+    background-image: url("img/Desktop\ wallpaper\ -\ Maldives\ dream\ beach.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.body-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.395);
+    z-index: -1;
+}
+
+
+.colo-chng {
+    background-color: rgba(36, 252, 180, 0.224);
+    width: 65%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.colo-non {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgb(255, 241, 241);
+}
+
+.colobtn {
+    background: rgb(14, 185, 201);
+    background: linear-gradient(90deg, rgb(18, 5, 155) 13%, rgb(132, 54, 210) 100%);
+    color: bisque;
+    border: 0px solid;
+}
+
+/* ==========login========== */
+.body-login{
+    background-image: url("img/download\ \(14\).jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.body-login::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.395);
+    z-index: -1;
+}
+
+.colo-chng2 {
+    background-color: rgba(18, 203, 228, 0.222);
+    width: 65%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 30px;
+}
+
+/* ==========WELCOME PAGE========== */
+.wlcm{
+    background-image: url("img/The\ Islands\ of\ Tahiti\ Reopened\ with\ a\ Very\ Thoughtful\ Twist.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.wlcm::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.395);
+    z-index: -1;
+}
+.colo-chng3{
+    background-color: rgba(36, 212, 252, 0.276);
+    width: 65%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 30px;
+}
