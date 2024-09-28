@@ -11,8 +11,9 @@ html {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
+    height: 100vh;
     position: relative;
+    overflow: auto;
 }
 
 .body-section::before {
@@ -25,7 +26,6 @@ html {
     background-color: rgba(255, 255, 255, 0.395);
     z-index: -1;
 }
-
 
 .colo-chng {
     background-color: rgba(36, 252, 180, 0.224);
@@ -47,14 +47,17 @@ html {
 }
 
 /* ==========login========== */
-.body-login{
+.body-login {
     background-image: url("img/download\ \(14\).jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
+    height: 100vh;
+    overflow: auto;
 }
+
 .body-login::before {
     content: '';
     position: absolute;
@@ -68,14 +71,14 @@ html {
 
 .colo-chng2 {
     background-color: rgba(18, 203, 228, 0.222);
-    width: 65%;
+    width: 60%;
     margin: auto;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     border-radius: 30px;
 }
 
 /* ==========WELCOME PAGE========== */
-.wlcm{
+.wlcm {
     background-image: url("img/The\ Islands\ of\ Tahiti\ Reopened\ with\ a\ Very\ Thoughtful\ Twist.jpeg");
     background-repeat: no-repeat;
     background-position: center;
@@ -83,6 +86,7 @@ html {
     background-attachment: fixed;
     position: relative;
 }
+
 .wlcm::before {
     content: '';
     position: absolute;
@@ -93,7 +97,8 @@ html {
     background-color: rgba(255, 255, 255, 0.395);
     z-index: -1;
 }
-.colo-chng3{
+
+.colo-chng3 {
     background-color: rgba(36, 212, 252, 0.276);
     width: 65%;
     margin: auto;

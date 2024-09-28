@@ -1,97 +1,5 @@
-// var usersData =[];
-// var registerBtn = document.getElementById("register")
-// registerBtn && registerBtn.addEventListener("click", function(){
-
-//     var name = document.getElementById("name")
-//     var email = document.getElementById("email")
-//     var password = document.getElementById("password")
-//     console.log(name.value, email.value, password.value);
-
-//     var userObj = {
-//         name: name.value,
-//         email: email.value,
-//         password: password.value,
-//     }
-//     usersData.push(userObj)
-//     console.log(userObj)
-
-//     name.value =""
-//     email.value = ""
-//     password.value= ""
-//     localStorage.clear()
-
-// console.log(usersData);
-//     localStorage.setItem("users",JSON.stringify(usersData))
-// var fetchingData= JSON.parse(localStorage.getItem("users"));
-// fetchingData.push(usersData)
-
-//    window.location.href ="login.html"
-// })
-
-
-
-
-// var loginBtn = document.getElementById("login")
-
-
-// loginBtn && loginBtn.addEventListener("click", function (event) {
-
-
-//     var loginEmail = document.getElementById("loginEmail")
-//     var loginPass = document.getElementById("loginPassword")
-
-//     var users = JSON.parse(localStorage.getItem("users"));
-
-
-//     for (var user of users) {
-//         if (user.email == loginEmail.value) {
-
-//             if (user.password == loginPass.value) {
-//                 console.log("login successfully");
-
-//             }
-//             else {
-//                 console.log("email is ok wrong password");
-
-//             }
-
-//         }
-//         else {
-//           if(loginPass.value == user.password){
-//             console.log("password is ok email is wrong");
-            
-//           }
-
-//         }
-
-//     }
-// })
-
-
-
-
-
-
-// ======================== miss file
-// var id = setInterval(function(){
-//     console.log("hello");
-    
-// },1000)
-
-// console.log(id);
-
-
-// setTimeout(function(){
-//    clearInterval(id)
-    
-// },5000)
-
-
-
-
-
-// =======================
 var registerBtn = document.getElementById("register");
+
 registerBtn && registerBtn.addEventListener("click", function () {
     var name = document.getElementById("name");
     var email = document.getElementById("email");
@@ -105,15 +13,30 @@ registerBtn && registerBtn.addEventListener("click", function () {
         return;
     }
 
-    // Fetch existing data from localStorage
+
+    // Retrieve existing users data or initialize an empty array
     var usersData = JSON.parse(localStorage.getItem("users")) || [];
 
-    // Check if email is already registered
-    var existingUser = usersData.find(user => user.email === email.value);
-    if (existingUser) {
+    // Update localStorage with the current users data
+    localStorage.setItem("users", JSON.stringify(usersData));
+
+
+
+    // Check if email is already registered using for loop
+    var emailExists = false;
+
+    for (var i = 0; i < usersData.length; i++) {
+        if (usersData[i].email === email.value) {
+            emailExists = true;
+            break; // Email found, no need to check further
+        }
+    }
+
+    if (emailExists) {
         console.log("Email is already registered");
         return;
     }
+
 
     var userObj = {
         name: name.value,
