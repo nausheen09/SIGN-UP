@@ -9,7 +9,7 @@ registerBtn && registerBtn.addEventListener("click", function () {
 
     // Check if any field is empty
     if (name.value === "" || email.value === "" || password.value === "") {
-        console.log("All fields are required");
+        alert("All fields are required");
         return;
     }
 
@@ -33,7 +33,7 @@ registerBtn && registerBtn.addEventListener("click", function () {
     }
 
     if (emailExists) {
-        console.log("Email is already registered");
+        alert("Email is already registered");
         return;
     }
 
@@ -69,14 +69,14 @@ document.addEventListener("click", function () {
         var loginPassword = document.getElementById("loginPassword").value.trim();
 
         if (loginEmail === "" || loginPassword === "") {
-            console.log("Both email and password fields are required.");
+           alert("Both email and password fields are required.");
             return;
         }
 
         var users = JSON.parse(localStorage.getItem("users")) || [];
 
         if (users.length === 0) {
-            console.log("No users found. Please register first.");
+            alert("No users found. Please register first.");
             return;
         }
 
@@ -87,18 +87,18 @@ document.addEventListener("click", function () {
                 userFound = true;
 
                 if (user.password === loginPassword) {
-                    console.log("Login successfully");
+                   alert("Login successfully");
                     // Redirect to the new page
                     window.location.href = "dashboard.html"; // Replace with the desired URL
                 } else {
-                    console.log("Email is correct but password is wrong");
+                    alert("Email is correct but password is wrong");
                 }
                 break; // Exit the loop once the user is found
             }
         }
 
         if (!userFound) {
-            console.log("Email not found");
+            alert("Email not found");
         }
     });
 });
