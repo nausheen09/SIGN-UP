@@ -7,12 +7,8 @@ html {
 }
 
 .body-section {
-    background-image: url("img/Desktop\ wallpaper\ -\ Maldives\ dream\ beach.jpeg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
     position: relative;
+    height: 100vh;
     overflow: auto;
 }
 
@@ -23,12 +19,16 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.395);
-    z-index: -1;
+    background-image: url("img/Desktop wallpaper - Maldives dream beach.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(4px);
+    opacity: 0.8;
 }
 
 .colo-chng {
-    background-color: rgba(36, 252, 180, 0.224);
+    background-color: rgba(28, 146, 142, 0.359);
     width: 65%;
     margin: auto;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -48,11 +48,6 @@ html {
 
 /* ==========login========== */
 .body-login {
-    background-image: url("img/download\ \(14\).jpeg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
     position: relative;
     height: 100vh;
     overflow: auto;
@@ -65,26 +60,27 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.395);
+    background-image: url("img/download\ \(14\).jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(3px);
     z-index: -1;
+    opacity: 0.8;
 }
-
 .colo-chng2 {
-    background-color: rgba(18, 203, 228, 0.222);
-    width: 60%;
+    background-color: rgba(4, 190, 184, 0.258);
+    width: 55%;
     margin: auto;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     border-radius: 30px;
 }
 
 /* ==========WELCOME PAGE========== */
-.wlcm {
-    background-image: url("img/The\ Islands\ of\ Tahiti\ Reopened\ with\ a\ Very\ Thoughtful\ Twist.jpeg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+.wlcm  {
     position: relative;
+    height: 100vh;
+    overflow: auto;
 }
 
 .wlcm::before {
@@ -94,12 +90,21 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.395);
+    background-image: url("img/The\ Islands\ of\ Tahiti\ Reopened\ with\ a\ Very\ Thoughtful\ Twist.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(3px);
     z-index: -1;
+    opacity: 0.8;
 }
-
+.masterr {
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(92, 92, 92, 0.29);
+}
 .colo-chng3 {
-    background-color: rgba(36, 212, 252, 0.276);
+    background-color: rgba(5, 210, 203, 0.281);
     width: 65%;
     margin: auto;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
